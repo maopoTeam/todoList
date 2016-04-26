@@ -139,6 +139,8 @@ var Dates = new function(){
 		pro.proDesc ? dates[proName].proDesc = pro.proDesc : "";
 		if(pro.proName && pro.proName !== proName)
 		{
+			for(var item in dates[proName].item)
+				dates[proName].item[item].proName = proName;
 			dates[proName].proName = pro.proName;
 			dates[pro.proName] = dates[proName];
 			delete dates[proName];

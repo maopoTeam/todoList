@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+</head>
+<body>
+来看是快乐的你
+</body>
+<script type="text/javascript" src="Dates.js"></script>
+<script type="text/javascript">
+	console.log(Dates.postItem(
+		"哈哈",
+		{
+				itemName : "aj阿斯顿ssd",
+//itemBeginTime:"123123123",//时间毫秒数,为空则为当前时间
+				itemEndTime:new Date().getTime() - 0 + 7*24*60*60*1000 + "",//时间毫秒数
+				itemDesc :"描述"	
+
+		}
+
+		));
+	// console.log(Dates.postPro({proName:"拉拉",proDesc:"asd"}));
+	// console.log(Dates.getProName());
+	// console.log(Dates.putPro("sdfa",{
+	// 	proName:"嘻嘻",
+	// 	proDesc:"哈哈"
+	// }));
+	// console.log(Dates.clearPro("哈哈"));
+	// console.log(Dates.getItemInfo("哈哈","ajsd"));
+	// console.log(Dates.deletePro("嘻嘻"));
+	// var i = 1234;
+	// console.log(Object.prototype.toString.call(i));
+// [object String]
+// [object Number]
+	// console.log(Dates.getWaitItem(7));
+	console.log(Dates.getAll());
+</script>
+</html>
